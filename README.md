@@ -1,5 +1,7 @@
 # DAGShift · 神经网络计算图多核划分与调度
 
+[![Checks](https://github.com/Ho-boop/dagshift/actions/workflows/ci.yml/badge.svg)](https://github.com/Ho-boop/dagshift/actions/workflows/ci.yml)
+
 DAGShift 是一个 Python 计算图划分与调度求解器项目：输入 Op–Tensor DAG 和核心数量，输出计算操作的子图归属，以及每个核心的子图执行顺序。项目结合结构化构造、有限定向改进和确定性预算控制，关注方案可行性、计算时延与数据搬运开销。
 
 **个人独立 AI Coding 项目。** 开发中使用 Claude Code、Codex 多会话协作，由作者负责需求与约束梳理、模块分工、接口与文件边界、实验对照、代码验收和最终交付。[AI 工作流](AI_WORKFLOW.md)描述如何组织这套开发过程。
@@ -11,7 +13,7 @@ DAGShift 是一个 Python 计算图划分与调度求解器项目：输入 Op–
 Python 3.14；可移植演示仅使用标准库，无第三方依赖。
 
 ```powershell
-git clone https://github.com/Ho-boop/dagshift.git
+git clone https://github.com/Ho-boop/dagshift.git DAGShift
 cd DAGShift
 $env:PYTHONUTF8 = '1'
 python -m dagshift.demo --cores 3 --out demo-output
