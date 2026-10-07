@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+results/
+demo-output/
+out*/
+external/
+fast_eval/
+data/
+private-paper/
+*.log
+*.zip
+*.tar.xz

@@ -1,0 +1,146 @@
+{
+  "ops": [
+    {
+      "id": 0,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 80
+    },
+    {
+      "id": 1,
+      "op": "ADD",
+      "pipe": "PIPE_V",
+      "cycles": 60
+    },
+    {
+      "id": 2,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 40
+    },
+    {
+      "id": 10,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 55
+    },
+    {
+      "id": 11,
+      "op": "ADD",
+      "pipe": "PIPE_V",
+      "cycles": 45
+    },
+    {
+      "id": 20,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 40
+    },
+    {
+      "id": 21,
+      "op": "ADD",
+      "pipe": "PIPE_V",
+      "cycles": 30
+    },
+    {
+      "id": 22,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 20
+    },
+    {
+      "id": 30,
+      "op": "MATMUL",
+      "pipe": "PIPE_M",
+      "cycles": 35
+    },
+    {
+      "id": 31,
+      "op": "ADD",
+      "pipe": "PIPE_V",
+      "cycles": 25
+    }
+  ],
+  "tensors": [
+    {
+      "id": 1000,
+      "size": 64,
+      "pos": "UB"
+    },
+    {
+      "id": 1001,
+      "size": 64,
+      "pos": "UB"
+    },
+    {
+      "id": 1010,
+      "size": 64,
+      "pos": "UB"
+    },
+    {
+      "id": 1020,
+      "size": 64,
+      "pos": "UB"
+    },
+    {
+      "id": 1021,
+      "size": 64,
+      "pos": "UB"
+    },
+    {
+      "id": 1030,
+      "size": 64,
+      "pos": "UB"
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1000
+    },
+    {
+      "source": 1000,
+      "target": 1
+    },
+    {
+      "source": 1,
+      "target": 1001
+    },
+    {
+      "source": 1001,
+      "target": 2
+    },
+    {
+      "source": 10,
+      "target": 1010
+    },
+    {
+      "source": 1010,
+      "target": 11
+    },
+    {
+      "source": 20,
+      "target": 1020
+    },
+    {
+      "source": 1020,
+      "target": 21
+    },
+    {
+      "source": 21,
+      "target": 1021
+    },
+    {
+      "source": 1021,
+      "target": 22
+    },
+    {
+      "source": 30,
+      "target": 1030
+    },
+    {
+      "source": 1030,
+      "target": 31
+    }
+  ]
+}

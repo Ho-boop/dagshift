@@ -1,0 +1,4 @@
+problem,cases,on_time,mean_speedup_k2,mean_speedup_k3,mean_speedup_k4,mean_speedup_k5,case_k2_k5_mean_wall_s,case_k2_k5_max_wall_s,capped_rows
+1,100,100,2.0325,2.8887,3.6302,4.2364,192.8,356.463,0
+2,100,100,2.3015,3.2830,4.1186,4.8129,170.6,379.221153,0
+3,100,100,2.3002,3.3077,4.1531,4.9120,173.1,392.279097,0
